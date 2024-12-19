@@ -22,7 +22,7 @@ Predicts the keyword from article's abstract and return the keyword from the cla
 #### Responses:
 - **200 OK:** Keyword extracted successfully
   ```json
-  {"keywords": ["sistem rekomendasi","produk perawatan wajah","model Transformer","ekstraksi kata kunci"],"message": "Kata kunci berhasil diekstraksi"}
+  {"keywords": ["sistem rekomendasi","produk perawatan wajah","model Transformer","ekstraksi kata kunci"],"message": "Ok"}
   ````
 - **400 Bad Request:** Invalid or missing abstract field
   ```json
