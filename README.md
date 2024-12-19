@@ -7,7 +7,7 @@ This repository contains the inplementation of models for keyword extraction fro
 2. [Best Model](#best-model)
 3. [Model Evaluation](#model-evaluation)
 4. [API](#api)
-5. [Running the Application Locally]
+5. [Running the Application Locally](#running-the-application-locally)
 
 ## Dataset
 The dataset used in this project consist of academic article abstracts primaly in the fields of Artificial Intelligence (AI) and Computer Science. Keywords were manually labeled for each abstract to capture the core concepts. The dataset contains approximately 5800 records and was collected from Institute of Advanced Engineering and Science (IAES) and Modern Education and Computer Science Press (MECS Press).
@@ -58,15 +58,12 @@ Predicts the keyword from article's abstract and return the keyword from the cla
 - **Request Body (Form Data):**
   - `JSON` : Article Abstract (string)
 
-#### Responses:
+#### Response:
 - **200 OK:** Keyword extracted successfully
   ```json
   {"keywords": ["sistem rekomendasi","produk perawatan wajah","model Transformer","ekstraksi kata kunci"],"message": "Ok"}
   ```
-- **400 Bad Request:** Invalid or missing abstract field
-  ```json
-  {"error": "Field 'abstract' tidak boleh kosong"}
-  ```
+
 ## Running the Application Locally
 ### 1. Cloning the Repository
 ```bash
