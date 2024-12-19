@@ -7,12 +7,13 @@ This repository contains the inplementation of models for keyword extraction fro
 2. [Best Model](#best-model)
 3. [Model Evaluation](#model-evaluation)
 4. [API](#api)
+5. [Running the Application Locally]
 
 ## Dataset
 The dataset used in this project consist of academic article abstracts primaly in the fields of Artificial Intelligence (AI) and Computer Science. Keywords were manually labeled for each abstract to capture the core concepts. The dataset contains approximately 5800 records and was collected from Institute of Advanced Engineering and Science (IAES) and Modern Education and Computer Science Press (MECS Press).
 
 ## Best Model
-The best-performing model for this task was selected after evaluating multiple approaches. BERT and DistilBERT were trained and fine-tuned for keyword extraction tasks, with thei performance compared based on precision, recall, and F1-Score. The final selection was made based on their ability to generalize and extract accurate keywords from unseen abstracts.
+The best-performing model for this task was selected after evaluating multiple approaches. BERT and DistilBERT were trained and fine-tuned for keyword extraction tasks, with thei performance compared based on precision, recall, and F1-Score. The final selection was made based on their ability to generalize and extract accurate keywords from unseen abstracts. The best model for this task is DistilBert with NLTK tokenization with the 80:20 splitting data ratio.
 
 ## Model Evaluation
 The model evaluation for this task was divided by two level, which are Token Level that measured the ability of the model to classify the B-I-O tokens, and Entity Level that evaluate the result of the extracted keywords from the predicted tokens.
@@ -61,8 +62,18 @@ Predicts the keyword from article's abstract and return the keyword from the cla
 - **200 OK:** Keyword extracted successfully
   ```json
   {"keywords": ["sistem rekomendasi","produk perawatan wajah","model Transformer","ekstraksi kata kunci"],"message": "Ok"}
-  ````
+  ```
 - **400 Bad Request:** Invalid or missing abstract field
   ```json
   {"error": "Field 'abstract' tidak boleh kosong"}
   ```
+## Running the Application Locally
+### 1. Cloning the Repository
+```bash
+git clone https://github.com/adnyaaap/Abstract-Keywords-Extraction-With-Bert
+cd Abstract-Keywords-Extraction-With-Bert/API
+````
+### 2. Installing Requirements 
+```bash
+pip install -r requirements.txt
+````
