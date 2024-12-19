@@ -3,10 +3,10 @@ Keyword Extraction using Bert and DistilBERT to Enhance Understanding of Article
 This repository contains the inplementation of models for keyword extraction from article abstracts in the fields of Artificial Intelligences (AI) and Computer Science. The goal is to facilitate efficient indexing, search, and summarization of academic literature.
 
 ## Table of Contents
-1. Dataset
-2. Best Model
-3. Model Evaluation
-4. API
+1. [Dataset](#dataset)
+2. [Best Model](#best-model)
+3. [Model Evaluation](#model-evaluation)
+4. [API](#api)
 
 ## Dataset
 The dataset used in this project consist of academic article abstracts primaly in the fields of Artificial Intelligence (AI) and Computer Science. Keywords were manually labeled for each abstract to capture the core concepts. The dataset contains approximately 5800 records and was collected from Institute of Advanced Engineering and Science (IAES) and Modern Education and Computer Science Press (MECS Press).
